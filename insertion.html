@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's GreenHouse - Insert Data</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="shortcut icon" href="./img/flower_icon.png" type="image/x-icon">
+</head>
+<body class="insertion-body">
+
+    <div class="wrapper">
+
+        <h1>Tony's GreenHouse</h1>
+
+        <form class="insertion-form">
+            <h2>Insert New Item Data</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="scientificName">Scientific Name:</label>
+            <input type="text" id="scientificName" name="scientificName" required>
+
+            <label for="origin">Origin:</label>
+            <select name="continent" id="continent">
+                <option value="0">-- choose option --</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Central Asia</option>
+                <option value="Asia">Western Asia</option>
+                <option value="Asia">Eastern Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia">Australia</option>
+                <option value="Antarctica">Antarctica</option>
+            </select>
+            <br>
+
+
+            <label for="climate">Climate:</label>
+            <select name="climate" id="climate">
+                <option value="0">-- choose option --</option>
+                <option value="Temperate">Temperate</option>
+                <option value="Cold">Cold</option>
+                <option value="Warm">Warm</option>
+                <option value="Hot">Hot</option>
+            </select>
+            <br>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+
+            <div class="form-buttons">
+                <button type="submit">Insert</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
