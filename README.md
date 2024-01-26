@@ -1,4 +1,4 @@
-<h1>Memoria del proyecto CRUD de 2ª evaluación de Lenguajes de Marcas - 1º DAW</h1>
+<h1>Proyecto CRUD de 2ª evaluación de Lenguajes de Marcas - 1º DAW</h1>
 <h2>Tony's GreenHouse</h2>
 <p>Enlaces directos a web navegable:</p>
 <ul>
@@ -9,6 +9,7 @@
 </ul>
 
 <h2 id="introduccion">Introducción</h2>
+<p>Estilo seguido: Flat Desing</p>
 <p>Trabajo realizado por: Antonio Cordero Molina</p>
 <p>Proyecto de Interfaz CRUD de 2ª evaluación del módulo Lenguajes de Marcas</p>
 <p>Enero de 2024</p>
