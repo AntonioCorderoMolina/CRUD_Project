@@ -13,8 +13,6 @@
 
 <h3>Interfaz Login</h3>
 <img src="./readme_CRUD_Project/login.png" alt="imagen de Login" style="width:50%">
-<p>He utilizado dos imágenes de fondo tomadas de uno de los fotográfos del grupo (@adiazfotos), una imagen se adapta a pantallas grandes (portátil, sobremesa), por otro lado la otra se adapta a pantallas pequeñas (móvil y tablet)<br>
-Sobre ella he colocado dos botones "Call to Action" estilados de forma sencilla</p>
 
 <h3>Interfaz de Inserción de datos</h3>
 <img src="./readme_CRUD_Project/insertion.png" alt="imagen de Insercion de datos" style="width:50%">
