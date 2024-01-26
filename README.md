@@ -1,10 +1,12 @@
 <h1>Memoria del proyecto CRUD de 2ª evaluación de Lenguajes de Marcas - 1º DAW</h1>
 <h2>Tony's GreenHouse</h2>
 <p>Enlaces directos a web navegable:</p>
-- <a href="https://antoniocorderomolina.github.io/CRUD_Project/login.html">Interfaz de Login</a>
-- <a href="https://antoniocorderomolina.github.io/CRUD_Project/insertion.html">Interfaz de Inserción de datos</a>
-- <a href="https://antoniocorderomolina.github.io/CRUD_Project/datatable.html">Interfaz de Tabla de Datos</a>
-- <a href="https://antoniocorderomolina.github.io/CRUD_Project/modification.html">Interfaz de Modificación de datos</a>
+<ul>
+<li> <a href="https://antoniocorderomolina.github.io/CRUD_Project/login.html">Interfaz de Login</a></li>
+<li> <a href="https://antoniocorderomolina.github.io/CRUD_Project/insertion.html">Interfaz de Inserción de datos</a></li>
+<li> <a href="https://antoniocorderomolina.github.io/CRUD_Project/datatable.html">Interfaz de Tabla de Datos</a></li>
+<li> <a href="https://antoniocorderomolina.github.io/CRUD_Project/modification.html">Interfaz de Modificación de datos</a></li>
+</ul>
 
 <h2 id="introduccion">Introducción</h2>
 <p>Trabajo realizado por: Antonio Cordero Molina</p>
