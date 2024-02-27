@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony's GreenHouse - Login Page</title>
     <link rel="stylesheet" href="./css/style.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="shortcut icon" href="./img/flower_icon.png" type="image/x-icon">
 </head>
 
-</head>
 <body class="login-body">
-    
     <div class="login-page">
         <h1>Welcome to</h1>
         <h1>Tony's GreenHouse</h1>
 
         <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email address"/>
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-
-            <form class="login-form">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
-                <button>login</button>
+            <form class="login-form" action="#">
+                <input type="text" id="username" placeholder="username"/>
+                <input type="password" id="password" placeholder="password"/>
+                <button type="submit">login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
         </div>
-
     </div>
 
     <script src="./js/crudJS.js"></script>
-
 </body>
 </html>
