@@ -23,9 +23,16 @@
             <label for="scientificName">Scientific Name:</label>
             <input type="text" id="scientificName" name="scientificName" required>
 
+            <label for="name">Owner:</label>
+            <input type="text" id="owner" name="owner" required>
+            <br>
+
+            <label for="email" class="form-label">Owner's Email:</label>
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+
             <label for="origin">Origin:</label>
             <select name="continent" id="continent">
-                <option value="0">-- choose option --</option>
+                <option value="0">-- choose an option --</option>
                 <option value="North America">North America</option>
                 <option value="South America">South America</option>
                 <option value="Europe">Europe</option>
@@ -39,14 +46,23 @@
             <br>
 
 
-            <label for="climate">Climate:</label>
-            <select name="climate" id="climate">
-                <option value="0">-- choose option --</option>
-                <option value="Temperate">Temperate</option>
-                <option value="Cold">Cold</option>
-                <option value="Warm">Warm</option>
-                <option value="Hot">Hot</option>
-            </select>
+            <label>Climate:</label>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="climate" id="warm" value="warm" required>
+                <label class="form-check-label" for="warm">Warm</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="climate" id="cold" value="cold" required>
+                <label class="form-check-label" for="cold">Cold</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="climate" id="humid" value="humid" required>
+                <label class="form-check-label" for="humid">Humid</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="climate" id="dry" value="dry" required>
+                <label class="form-check-label" for="dry">Dry</label>
+            </div>
             <br>
 
             <label for="price">Price:</label>

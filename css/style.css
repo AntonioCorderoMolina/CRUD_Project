@@ -272,7 +272,7 @@ caption {
 
 .wrapper {
     width: 360px;
-    padding: 8% 0 0;
+    padding: 2% 0 0;
     margin: auto;
 }
 
@@ -288,6 +288,7 @@ caption {
 }
 
 .insertion-form h2 {
+    margin-top: -10px;
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
@@ -332,4 +333,9 @@ caption {
 
 .insertion-form button:hover, .insertion-form button:active, .insertion-form button:focus {
     background: #43A047;
+}
+
+.form-check-inline {
+    display: inline-block;
+    margin: 10px;
 }
