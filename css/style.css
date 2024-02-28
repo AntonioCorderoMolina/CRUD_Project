@@ -17,7 +17,7 @@
 
 /******************************* General Style ********************************/
 
-h1 {
+h1, #demo {
     font-family: Titles;
     display: block;
     text-align: center;
@@ -261,7 +261,7 @@ caption {
 
 /*********************** Style for Insertion & Modify Data Page ************************/
 
-.insertion-body {
+.insertion-body, .modification-body {
     background: #76b852;
     background: rgb(141,194,111);
     background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
@@ -276,7 +276,7 @@ caption {
     margin: auto;
 }
 
-.insertion-form {
+.insertion-form, .modification-form {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -287,20 +287,21 @@ caption {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.insertion-form h2 {
+.insertion-form h2 , .modification-form h2 {
     margin-top: -10px;
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
 }
 
-.insertion-form label {
+.insertion-form label, .modification-form label {
     display: block;
     margin-bottom: 8px;
     color: #333;
 }
 
-.insertion-form input, .insertion-form select {
+.insertion-form input, .insertion-form select,
+.modification-form input, .modification-form select {
     font-family: Form_Font, sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -316,7 +317,7 @@ caption {
     margin-top: 20px;
 }
 
-.insertion-form button {
+.insertion-form button , .modification-form button {
     font-family: Form_Font, sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -331,11 +332,24 @@ caption {
     cursor: pointer;
 }
 
-.insertion-form button:hover, .insertion-form button:active, .insertion-form button:focus {
+.insertion-form button:hover, .insertion-form button:active, .insertion-form button:focus, 
+.modification-form button:hover, .modification-form button:active, .modification-form button:focus {
     background: #43A047;
 }
 
 .form-check-inline {
     display: inline-block;
     margin: 10px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+.newsletter-content {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Establece dos columnas, la primera de tamaño automático para el checkbox y la segunda de tamaño flexible para el texto */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    gap: 10px;
+    margin-top: 3%;
 }

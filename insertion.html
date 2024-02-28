@@ -13,7 +13,7 @@
 
         <h1>Tony's GreenHouse</h1>
 
-        <form class="insertion-form">
+        <form class="insertion-form" id="insertionForm">
             <h2>Insert New Item Data</h2>
             
             <label for="name">Name:</label>
@@ -21,30 +21,29 @@
             <br>
 
             <label for="scientificName">Scientific Name:</label>
-            <input type="text" id="scientificName" name="scientificName" required>
+            <input type="text" id="scientificName" name="scientificName" minlength="5" required>
 
-            <label for="name">Owner:</label>
+            <label for="owner">Owner:</label>
             <input type="text" id="owner" name="owner" required>
             <br>
 
             <label for="email" class="form-label">Owner's Email:</label>
-            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
 
             <label for="origin">Origin:</label>
-            <select name="continent" id="continent">
-                <option value="0">-- choose an option --</option>
+            <select name="continent" id="continent" required>
+                <option value="">-- choose an option --</option>
                 <option value="North America">North America</option>
                 <option value="South America">South America</option>
                 <option value="Europe">Europe</option>
-                <option value="Asia">Central Asia</option>
-                <option value="Asia">Western Asia</option>
-                <option value="Asia">Eastern Asia</option>
+                <option value="Central Asia">Central Asia</option>
+                <option value="Western Asia">Western Asia</option>
+                <option value="Eastern Asia">Eastern Asia</option>
                 <option value="Africa">Africa</option>
                 <option value="Australia">Australia</option>
                 <option value="Antarctica">Antarctica</option>
             </select>
             <br>
-
 
             <label>Climate:</label>
             <div class="form-check-inline">
@@ -66,7 +65,14 @@
             <br>
 
             <label for="price">Price:</label>
-            <input type="number" id="price" name="price" step="0.01" required>
+            <input type="number" id="price" name="price" step="0.01" min="0.01" max="9999" required>
+            
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                    <label class="form-check-label" for="newsletter">I want to receive the weekly newsletter</label>
+                </div>
+            </div>
 
             <div class="form-buttons">
                 <button type="submit">Insert</button>
@@ -75,5 +81,8 @@
         </form>
         
     </div>
+
+    <script src="./js/crudJS.js"></script>
 </body>
 </html>
+
