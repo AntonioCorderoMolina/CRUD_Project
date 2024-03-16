@@ -17,21 +17,25 @@
             <h2>Modify Item Data</h2>
             
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Rose" required>
+            <input type="text" id="name" name="name" placeholder="Rose" input>
+            <div class="error-message" id="name-error"></div>
             <br>
 
             <label for="scientificName">Scientific Name:</label>
-            <input type="text" id="scientificName" name="scientificName" placeholder="Rosa spp." required>
+            <input type="text" id="scientificName" name="scientificName" placeholder="Rosa spp." input>
+            <div class="error-message" id="scientificName-error"></div>
 
             <label for="owner">Owner:</label>
-            <input type="text" id="owner" name="owner" placeholder="Tony C." required>
+            <input type="text" id="owner" name="owner" placeholder="Tony C." input>
+            <div class="error-message" id="owner-error"></div>
             <br>
 
             <label for="email" class="form-label">Owner's Email:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="tony_cn@gmail.com" aria-describedby="emailHelp" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="tony_cn@gmail.com" aria-describedby="emailHelp" input>
+            <div class="error-message" id="email-error"></div>
 
             <label for="origin">Origin:</label>
-            <select name="continent" id="continent" required>
+            <select name="continent" id="continent" input>
                 <option value="0">Europe</option>
                 <option value="North America">North America</option>
                 <option value="South America">South America</option>
@@ -43,29 +47,31 @@
                 <option value="Australia">Australia</option>
                 <option value="Antarctica">Antarctica</option>
             </select>
+            <div class="error-message" id="continent-error"></div>
             <br>
 
             <label>Climate:</label>
             <div class="form-check-inline">
-                <input class="form-check-input" type="radio" name="climate" id="warm" value="warm" required>
+                <input class="form-check-input" type="radio" name="climate" id="warm" value="warm" input>
                 <label class="form-check-label" for="warm">Warm</label>
             </div>
             <div class="form-check-inline">
-                <input class="form-check-input" type="radio" name="climate" id="cold" value="cold" required>
+                <input class="form-check-input" type="radio" name="climate" id="cold" value="cold" input>
                 <label class="form-check-label" for="cold">Cold</label>
             </div>
             <div class="form-check-inline">
-                <input class="form-check-input" type="radio" name="climate" id="humid" value="humid" required>
+                <input class="form-check-input" type="radio" name="climate" id="humid" value="humid" input>
                 <label class="form-check-label" for="humid">Humid</label>
             </div>
             <div class="form-check-inline">
-                <input class="form-check-input" type="radio" name="climate" id="dry" value="dry" required>
+                <input class="form-check-input" type="radio" name="climate" id="dry" value="dry" input>
                 <label class="form-check-label" for="dry">Dry</label>
             </div>
+            <div class="error-message" id="climate-error"></div>
             <br>
 
             <label for="price">Price:</label>
-            <input type="number" id="price" name="price" step="0.01" placeholder="$10" required>
+            <input type="number" id="price" name="price" step="0.01" placeholder="$10" input>
 
             <div class="form-buttons">
                 <button type="submit">Modify</button>

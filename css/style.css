@@ -30,6 +30,12 @@ caption {
     font-size: 2em;
 }
 
+.error-message {
+    font-family: Titles;
+    color: #da190b;
+    font-size: 1em;
+}
+
 /************************** Style for Login Page ******************************/
 
 .login-page {

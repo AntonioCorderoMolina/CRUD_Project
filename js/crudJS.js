@@ -14,19 +14,23 @@ document.addEventListener("DOMContentLoaded", function() {
         var passwordInput = document.getElementById('password');
         var username = usernameInput.value.trim();
         var password = passwordInput.value.trim();
+        var usernameError = document.getElementById('username-error');
+        var passwordError = document.getElementById('password-error');
 
-        if (username.length === 0 || username.length < 8 || username.length > 12) {
-            alert("The username must be between 8 and 12 characters.");
+        // Reset error messages
+        usernameError.textContent = '';
+        passwordError.textContent = '';
+
+        if (username.length === 0) {
+            usernameError.textContent = "The username must be between 8 and 12 characters.";
             return;
         }
 
-        if (password.length === 0 || password.length < 8 || password.length > 15) {
-            alert("The password must be between 8 and 15 characters.");
+        if (password.length < 8 || password.length > 15) {
+            passwordError.textContent = "The password must be between 8 and 15 characters.";
             return;
-        }
-
-        if (!(/[A-Z]/.test(password) && /[a-z]/.test(password) && /[0-9]/.test(password))) {
-            alert("The password must contain at least one uppercase letter, one lowercase letter, and one digit.");
+        } else if (!(/[A-Z]/.test(password) && /[a-z]/.test(password) && /[0-9]/.test(password))) {
+            passwordError.textContent = "The password must contain at least one uppercase letter, one lowercase letter, and one digit.";
             return;
         }
 
@@ -65,30 +69,48 @@ document.addEventListener("DOMContentLoaded", function() {
         var newsletter = document.getElementById('newsletter').checked;
 
         if (name === '') {
-            alert('Please enter a name.');
+            document.getElementById('name-error').textContent = 'Please enter a name.';
             return;
+        } else {
+            document.getElementById('name-error').textContent = '';
         }
-
+        
         if (scientificName.length < 5) {
-            alert('Scientific name must be at least 5 characters long.');
+            document.getElementById('scientificName-error').textContent = 'Scientific name must be at least 5 characters long.';
             return;
+        } else {
+            document.getElementById('scientificName-error').textContent = '';
         }
-
+        
+        if (owner === '') {
+            document.getElementById('owner-error').textContent = 'Please enter an owner.';
+            return;
+        } else {
+            document.getElementById('owner-error').textContent = '';
+        }
+        
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
+            document.getElementById('email-error').textContent = 'Please enter a valid email address.';
             return;
+        } else {
+            document.getElementById('email-error').textContent = '';
         }
-
+        
         if (continent === '') {
-            alert('Please choose an origin.');
+            document.getElementById('continent-error').textContent = 'Please choose an origin.';
             return;
+        } else {
+            document.getElementById('continent-error').textContent = '';
         }
-
-        if (!climate) {
-            alert('Please choose a climate.');
+        
+        var climateChecked = document.querySelector('input[name="climate"]:checked');
+        if (!climateChecked) {
+            document.getElementById('climate-error').textContent = 'Please choose a climate.';
             return;
-        }
+        } else {
+            document.getElementById('climate-error').textContent = '';
+        }        
 
         if (isNaN(price) || parseFloat(price) < 0.01 || parseFloat(price) > 9999) {
             alert('Please enter a valid price between $0.01 and $9999.');
@@ -121,6 +143,56 @@ document.addEventListener("DOMContentLoaded", function() {
 
             modificationForm.submit();
             modificationForm.reset();
+
+            if (name === '') {
+                document.getElementById('name-error').textContent = 'Please enter a name.';
+                return;
+            } else {
+                document.getElementById('name-error').textContent = '';
+            }
+            
+            if (scientificName.length < 5) {
+                document.getElementById('scientificName-error').textContent = 'Scientific name must be at least 5 characters long.';
+                return;
+            } else {
+                document.getElementById('scientificName-error').textContent = '';
+            }
+            
+            if (owner === '') {
+                document.getElementById('owner-error').textContent = 'Please enter an owner.';
+                return;
+            } else {
+                document.getElementById('owner-error').textContent = '';
+            }
+            
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+                return;
+            } else {
+                document.getElementById('email-error').textContent = '';
+            }
+            
+            if (continent === '') {
+                document.getElementById('continent-error').textContent = 'Please choose an origin.';
+                return;
+            } else {
+                document.getElementById('continent-error').textContent = '';
+            }
+            
+            var climateChecked = document.querySelector('input[name="climate"]:checked');
+            if (!climateChecked) {
+                document.getElementById('climate-error').textContent = 'Please choose a climate.';
+                return;
+            } else {
+                document.getElementById('climate-error').textContent = '';
+            }        
+    
+            if (isNaN(price) || parseFloat(price) < 0.01 || parseFloat(price) > 9999) {
+                alert('Please enter a valid price between $0.01 and $9999.');
+                return;
+            }
+
         });
     }
 });
